@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-29T22:25:06 IST" name="Default suite" finished-at="2023-04-29T22:25:28 IST" duration-ms="21957">
+    <groups>
+    </groups>
+    <test started-at="2023-04-29T22:25:06 IST" name="Default test" finished-at="2023-04-29T22:25:28 IST" duration-ms="21957">
+      <class name="com.bestretail.qspiders.testcase.TC01_LoginintoHomepage">
+        <test-method is-config="true" signature="confiBeforeMethod()[pri:0, instance:com.bestretail.qspiders.testcase.TC01_LoginintoHomepage@55b699ef]" started-at="2023-04-29T22:24:39 IST" name="confiBeforeMethod" finished-at="2023-04-29T22:25:06 IST" duration-ms="27543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confiBeforeMethod -->
+        <test-method signature="logintoHomepage()[pri:0, instance:com.bestretail.qspiders.testcase.TC01_LoginintoHomepage@55b699ef]" started-at="2023-04-29T22:25:06 IST" name="logintoHomepage" finished-at="2023-04-29T22:25:28 IST" duration-ms="21786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoHomepage -->
+        <test-method is-config="true" signature="confiAfterMethod()[pri:0, instance:com.bestretail.qspiders.testcase.TC01_LoginintoHomepage@55b699ef]" started-at="2023-04-29T22:25:28 IST" name="confiAfterMethod" finished-at="2023-04-29T22:25:32 IST" duration-ms="3388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confiAfterMethod -->
+      </class> <!-- com.bestretail.qspiders.testcase.TC01_LoginintoHomepage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
