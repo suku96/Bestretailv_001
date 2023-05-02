@@ -10,7 +10,6 @@ public class TC01_LoginintoHomepage extends BaseClass{
 	@Test
 	public void logintoHomepage() throws Exception {
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.getLoginButton().submit();
-		Thread.sleep(8000);
+		loginpage.getLoginButton().submit();		
 	}
 }
