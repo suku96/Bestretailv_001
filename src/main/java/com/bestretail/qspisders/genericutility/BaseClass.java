@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -17,6 +18,7 @@ public class BaseClass {
 	public ExcelUtility excelUtils= new ExcelUtility();
 	public FileUtility fileUtils=new FileUtility();
 	public WebdriverUtility webdriverUtils=new WebdriverUtility();
+	public Actions action;
 	@BeforeSuite
 	public void confiBeforeMethod() throws IOException {
 		String browser = fileUtils.readDataFromPropertyFile("browser");
@@ -35,6 +37,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.get(fileUtils.readDataFromPropertyFile("url"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		action=new Actions(driver);
 	}
 	@AfterSuite
 	public void confiAfterMethod() {

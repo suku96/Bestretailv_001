@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bestretail.qspiders.testcase.TC01_LoginintoHomepage">
+      <class name="com.bestretail.qspiders.testcase.TC02_AddNewProduct">
         <methods>
-          <include name="logintoHomepage"/>
-          <include name="befefrke"/>
+          <include name="addNewProduct"/>
+          <include name="confiBeforeMethod"/>
+          <include name="confiAfterMethod"/>
         </methods>
-      </class> <!-- com.bestretail.qspiders.testcase.TC01_LoginintoHomepage -->
+      </class> <!-- com.bestretail.qspiders.testcase.TC02_AddNewProduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

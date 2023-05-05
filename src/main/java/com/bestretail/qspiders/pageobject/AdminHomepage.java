@@ -8,11 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 public class AdminHomepage {
 	WebDriver driver;
 
-	public void AdminHomePage(WebDriver driver) {
+	public AdminHomepage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "p[contains(.,'Catalog')]")
+	@FindBy(xpath = "//p[not(text()=' Catalog settings') and contains(.,'Catalog')]")
 	private WebElement catalogOption;
 
 	@FindBy(xpath = "//p[text()=' Products']")

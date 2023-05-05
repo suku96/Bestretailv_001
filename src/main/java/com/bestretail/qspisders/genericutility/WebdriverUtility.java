@@ -21,7 +21,7 @@ public class WebdriverUtility {
 	 * @param seconds
 	 */
 	public void implicitwait(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	/**
@@ -110,9 +110,9 @@ public class WebdriverUtility {
 		Boolean Response = wait.until(ExpectedConditions.titleContains(fileUtils.readDataFromPropertyFile(pageTitle)));
 		return Response;
 	}
-    public void explicitWaittoElementToBeClickable(WebDriver driver,WebElement locator) {
+    public void explicitWaittoElementToBeClickable(WebDriver driver,WebElement element) {
   	  WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
-  	  wait.until(ExpectedConditions.elementToBeClickable(locator));
+  	  wait.until(ExpectedConditions.elementToBeClickable(element));
     
     }
     public void explicitWaittoElementhasAttribute(WebDriver driver,WebElement locator,String attname,String value) {

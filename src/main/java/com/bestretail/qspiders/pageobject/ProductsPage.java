@@ -14,5 +14,10 @@ public class ProductsPage {
    
 	 @FindBy(xpath = "//a[contains(.,'Add new')]")
 	 private WebElement addNewButton;
+
+	public WebElement getAddNewButton() {
+		return addNewButton;
+		
+	}
 	 
 }

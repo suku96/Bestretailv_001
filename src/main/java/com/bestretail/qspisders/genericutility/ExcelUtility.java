@@ -20,7 +20,7 @@ public class ExcelUtility {
 	 */
 	public String readStringDataFromExcel(String sheetName, int rowIndex, int cellIndex)
 			throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("");
+		FileInputStream fis = new FileInputStream("./src/test/resources/bestretail.xlsx");
 		Cell cell = WorkbookFactory.create(fis).getSheet(sheetName).getRow(rowIndex).getCell(cellIndex);
 		return cell.getStringCellValue();
 	}
@@ -35,7 +35,7 @@ public class ExcelUtility {
    */
 	public Double readNumericDataFromExcel(String sheetName, int rowIndex, int cellIndex)
 			throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("");
+		FileInputStream fis = new FileInputStream("./src/test/resources/bestretail.xlsx");
 		Cell cell = WorkbookFactory.create(fis).getSheet(sheetName).getRow(rowIndex).getCell(cellIndex);
 		return cell.getNumericCellValue();
 	}
