@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 /**
  * Can execute basic Web driver functions
@@ -120,5 +121,15 @@ public class WebdriverUtility {
     	  wait.until(ExpectedConditions.domAttributeToBe(locator, attname,value));
     	
       }
+ 
+  /**
+   * this method used to select the drop down option with visible text of the option
+   * @param element
+   * @param text
+   */
+    public void optionToSelectByText(WebElement element,String text) {
+    	Select select=new Select(element);
+    	select.selectByVisibleText(text);
+    }
     
 }

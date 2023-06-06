@@ -33,10 +33,10 @@ public class ExcelUtility {
    * @throws EncryptedDocumentException
    * @throws IOException
    */
-	public Double readNumericDataFromExcel(String sheetName, int rowIndex, int cellIndex)
+	public String readNumericDataFromExcel(String sheetName, int rowIndex, int cellIndex)
 			throws EncryptedDocumentException, IOException {
 		FileInputStream fis = new FileInputStream("./src/test/resources/bestretail.xlsx");
 		Cell cell = WorkbookFactory.create(fis).getSheet(sheetName).getRow(rowIndex).getCell(cellIndex);
-		return cell.getNumericCellValue();
+		return String.valueOf(cell.getNumericCellValue());
 	}
 }
